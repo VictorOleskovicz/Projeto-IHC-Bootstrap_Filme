@@ -11,35 +11,42 @@
     <!-- CSS personalizado (opcional) -->
     <style>
         body {
-            background-color: #f0f8ff;
+            background-image: url('img/how-to-train-your-dragon-4k-spw1ve4heq7vliaf.jpg'); /* caminho relativo à pasta */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
         }
+    
         .login-container {
             max-width: 400px;
             margin: 100px auto;
             padding: 30px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9); /* fundo semi-transparente */
             border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
         }
     </style>
-</head>
+    
 <body>
 
-    <!-- TELA DE LOGIN -->
-    <div class="login-container">
-        <h2 class="text-center mb-4">Bem-vindo(a) ao Mundo dos Dragões</h2>
-        <form>
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Entrar</button>
-        </form>
-    </div>
+
+     <!-- FORMULÁRIO DE LOGIN -->
+  <div class="login-container">
+    <h2 class="text-center mb-4">Bem-vindo(a) ao Mundo dos Dragões</h2>
+    
+    <form action="principal.html" method="get">
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    </form>
+  </div>
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-Q5KcVfAX2hL4yRIFX8BmfDcyxeJ2iOow6OAcKx8S5z1+kqCahw9kflF2df0y3ze/" crossorigin="anonymous"></script>
